@@ -18,8 +18,8 @@ Resources:
                 - HEAD
               MaxAge: 3000
   
-  # Print out the name of the bucket that is created
-  Outputs:
-    AttachmentsBucketName:
-      Value:
-        Ref: AttachmentsBucket
+# Print out the name of the bucket that is created
+Outputs:
+AttachmentsBucketName:
+    Value:
+    Ref: AttachmentsBucket

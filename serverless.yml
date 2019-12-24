@@ -1,7 +1,5 @@
-# NOTE: update this with your service name
 service: notes-app-2-api
 
-# Create an optimized package for our functions 
 package:
   individually: true
 
@@ -56,12 +54,6 @@ provider:
         - "Fn::GetAtt": [ NotesTable, Arn ]
 
 functions:
-  # hello:
-  #   handler: handler.hello
-  #   events:
-  #     - http:
-  #         path: hello
-  #         method: get
   create:
     handler: create.main
     events:
@@ -141,3 +133,4 @@ resources:
   - ${file(resources/s3-bucket.yml)}
   # Cognito
   - ${file(resources/cognito-user-pool.yml)}
+  - ${file(resources/cognito-identity-pool.yml)}
