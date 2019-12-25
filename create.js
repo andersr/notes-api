@@ -4,6 +4,7 @@ import { success, failure } from './libs/response-lib';
 import * as dynamoDbLib from './libs/dynamodb-lib';
 // maybe need AWS.config.update({ region: "my-region" });
 // const dynamoDb = new AWS.DynamoDB.DocumentClient();
+uuid.abc.gibberish;
 
 export async function main(event, context) {
     const data = JSON.parse(event.body); // HTTP request params
